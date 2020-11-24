@@ -11,6 +11,7 @@
       "express-fileupload": "^1.2.0",
       "filestack-js": "^3.20.0",
       "jsonwebtoken": "^8.5.1",
+      "nodemon": "^2.0.6",
       "pdf-parse": "^1.1.1",
       "pg": "^8.4.0",
       "reflect-metadata": "^0.1.10",
@@ -20,6 +21,6 @@
       "validate.js": "^0.13.1"
    },
    "scripts": {
-      "start": "ts-node src/index.ts"
+      "start": "nodemon src/index.ts"
    }
 }
