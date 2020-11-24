@@ -1,6 +1,6 @@
 import * as express from "express";
 import controller from "./controller/controller";
-import auth from "./middleware/auth"
+import auth from "./middleware/auth";
 const router = express.Router();
 
 router.get("/user/:id",controller.getuser)  //for profile
