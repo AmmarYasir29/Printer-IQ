@@ -1,24 +1,24 @@
 {
-   "name": "MyProject",
+   "name": "printer",
    "version": "0.0.1",
    "description": "Awesome project developed with TypeORM.",
    "dependencies": {
+      "@types/node": "^8.10.66",
       "bcrypt": "^5.0.0",
       "express": "^4.17.1",
       "express-fileupload": "^1.2.0",
       "filestack-js": "^3.20.0",
       "jsonwebtoken": "^8.5.1",
-      "@types/node": "^8.0.29",
       "nodemon": "^2.0.6",
       "pdf-parse": "^1.1.1",
-      "typeorm": "0.2.29",
-      "pg": "^8.4.0",
-      "reflect-metadata": "^0.1.10",
-      "typescript": "3.3.3333",
+      "pg": "^8.5.1",
+      "reflect-metadata": "^0.1.13",
       "ts-node": "^3.3.0",
+      "typeorm": "^0.2.29",
+      "typescript": "^3.3.3333",
       "validate.js": "^0.13.1"
    },
    "scripts": {
-      "start": "nodemon src/index.ts"
+      "start": "ts-node src/index.ts"
    }
 }
