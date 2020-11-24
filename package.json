@@ -1,0 +1,25 @@
+{
+   "name": "MyProject",
+   "version": "0.0.1",
+   "description": "Awesome project developed with TypeORM.",
+   "devDependencies": {
+      "ts-node": "3.3.0",
+      "@types/node": "^8.0.29",
+      "typescript": "3.3.3333"
+   },
+   "dependencies": {
+      "bcrypt": "^5.0.0",
+      "express": "^4.17.1",
+      "express-fileupload": "^1.2.0",
+      "filestack-js": "^3.20.0",
+      "jsonwebtoken": "^8.5.1",
+      "pdf-parse": "^1.1.1",
+      "pg": "^8.4.0",
+      "reflect-metadata": "^0.1.10",
+      "typeorm": "0.2.29",
+      "validate.js": "^0.13.1"
+   },
+   "scripts": {
+      "start": "ts-node src/index.ts"
+   }
+}
