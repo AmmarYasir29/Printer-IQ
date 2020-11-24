@@ -17,8 +17,7 @@ export default userAuth = async (req, res, next): Promise<object> => {
     }
   
     let user = await User.findOne({
-      where: { id: payload.id },
-    });
+      where: { id: payload.id }});
     if (!user) return errRes(res, "Please complete the registration process");
   
     req.user = user;

@@ -11,10 +11,10 @@ const Port = process.env.PORT || 3000
 createConnection().then(async connection => {
 
     app.use(fileUpload({}));
-    app.use(express.json())
+    app.use(express.json());
     app.use("/v1",router);
     app.use( (req,res,next)=> {
-    return errRes(res,"404 Not Found !")
+    return errRes(res,"404 Not Found !");
     });
 
 }).catch(error => console.log(error));

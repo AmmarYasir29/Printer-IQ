@@ -24,4 +24,4 @@ const errRes = (res, err,statusCode = 400) => {
   await bcrypt.compare(plainPassword, hash);
 
 
-  export { errRes,okRes,getOTP,hashMyPassword,comparePassword, };
+  export { errRes,okRes,getOTP,hashMyPassword,comparePassword };
