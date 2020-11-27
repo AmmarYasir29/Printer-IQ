@@ -12,7 +12,7 @@ createConnection().then(async connection => {
 
     app.use(fileUpload({}));
     app.use(express.json());
-    app.use("/v1",router);
+    app.use("/",router);
     app.use( (req,res,next)=> {
     return errRes(res,"404 Not Found !");
     });
