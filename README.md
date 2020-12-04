@@ -1,5 +1,5 @@
 # Awesome Project Build with TypeORM
-
+## Printer App
 Steps to run this project:
 
 1. Run `npm i` command

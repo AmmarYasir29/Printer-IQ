@@ -1,0 +1,10 @@
+{
+    "name": "Printer",
+    "type": "postgres",
+    "url": "postgres://kjlkhsmdhgxtuz:3368a00b7d428f1e519e2c5037e39a95b4db33a535f430e504fe2c591964968e@ec2-54-247-122-209.eu-west-1.compute.amazonaws.com:5432/dgaii8h85gtfq",   
+    "synchronize": true,
+    "logging": true,
+    "entities": ["src/entity/*.*"]
+  }
+
+  
