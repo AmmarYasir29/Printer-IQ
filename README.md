@@ -10,6 +10,8 @@ fetch(https://iq-printer.herokuapp.com/)
 ```
 
 ## Controler
+[API](https://iq-printer.herokuapp.com/)
+
  - /user/:id    get     for profile
 - /register    post    to register 
 - /order       post    the user make order
