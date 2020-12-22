@@ -148,7 +148,6 @@ export default class controller {
         const token = jwt.sign({ id: user.id }, "12345");
     
         // return
-    
         return okRes(res, { data: { token } });
       }
 

@@ -3,12 +3,10 @@
    "version": "0.0.1",
    "description": "Awesome project developed with TypeORM.",
    "devDependencies": {
-      
-      
-     
-      },
-      
-      "dependencies": {
+      "eslint": "^7.16.0",
+      "eslint-plugin-react": "^7.21.5"
+   },
+   "dependencies": {
       "@types/node": "^8.10.66",
       "bcrypt": "^5.0.0",
       "express": "^4.17.1",
