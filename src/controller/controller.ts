@@ -99,9 +99,9 @@ export default class controller {
     if (notValid) return errRes(res, notValid);
 
     let phoneObj = PhoneFormat.getAllFormats(req.body.phone);
-    if (!phoneObj.isNumber) return errRes(res, `phoneInvalid${req.body.phone}`);
+    if (!phoneObj.isNumber)
+      return errRes(res, `phone Invalid ${req.body.phone}`);
     let phone = phoneObj.globalP;
-
     let user: any;
     try {
       user = await User.findOne({ where: { phone } });
@@ -120,12 +120,11 @@ export default class controller {
     });
     await user.save();
     user.password = null;
-
     //sendSMS(` Your OTP: ${user.otp}`, user.phone);
 
     user.otp = null;
     const token = jwt.sign({ id: user.id }, process.env.JWT_SECRET);
-    return okRes(res, { data: { user, token } });
+    return okRes(res, { dataLastUpdate: { user, token } });
   }
 
   static async login(req, res): Promise<object> {
