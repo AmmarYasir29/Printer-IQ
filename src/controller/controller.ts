@@ -95,6 +95,7 @@ export default class controller {
   }
 
   static async register(req: Request, res: Response): Promise<object> {
+    //FIXME: not work becuase retirn object
     let notValid = validate(req.body, validator.register());
     if (notValid) return errRes(res, notValid);
 
@@ -128,7 +129,7 @@ export default class controller {
   }
 
   static async login(req, res): Promise<object> {
-    // validation
+    // validation FIXME: not work becuase retirn object
     let notValid = validate(req.body, validator.login());
     if (notValid) return errRes(res, notValid);
 
